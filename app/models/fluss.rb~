@@ -1,0 +1,2 @@
+class Fluss < ActiveRecord::Base
+end

@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<%= @water.name %>
+
+<h1>Tags:</h1>
+<%= join_tags(@water) %>
+
+<h1>Stations</h1>
+<%= render :partial => "stations/station", :collection => @water.stations %>
+
+<h1>Add Station</h1>
+<%= render "stations/form" %>
+
+<%= link_to 'Ändern', edit_water_path(@water) %> |
+<%= link_to 'Übersicht', waters_path %> | 
+<%= link_to 'Neues Gewässer', new_water_path %>

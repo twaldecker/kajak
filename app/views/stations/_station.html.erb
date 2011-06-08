@@ -1,0 +1,7 @@
+<p>
+	<b>Station:</b>
+	<%= station.name %>
+	<%= link_to 'Delete', [station.water, station],
+        :confirm => 'Wirklich unwiderruflich löschen?',
+		:method => :delete %>
+</p>
